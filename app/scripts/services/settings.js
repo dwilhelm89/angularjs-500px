@@ -4,7 +4,7 @@
 angular.module('angularjs500pxAutomateApp')
   .factory('settings', ['localStorageService', function(localStorageService) {
         var settings = localStorageService.get('settings') || {
-            sound: true,
+            sound: false,
             fullscreen: true,
             slideshow: true
         };

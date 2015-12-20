@@ -45,7 +45,7 @@ if (consumerKey) {
             request('https://api.500px.com/v1/photos/' + req.param('id') + '?consumer_key=' + consumerKey).pipe(res); 
         } else {
             console.log('getting photo list');
-            request('https://api.500px.com/v1/photos?feature=popular&consumer_key=' + consumerKey).pipe(res);
+            request('https://api.500px.com/v1/photos?feature=popular&image_size=6&consumer_key=' + consumerKey).pipe(res);
         }
     });
 } else {

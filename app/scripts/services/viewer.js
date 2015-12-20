@@ -14,7 +14,7 @@ angular.module('angularjs500pxAutomateApp')
                 currentIndex = -1,
                 pictures = null,
                 timeout = null,
-                duration = 5000,
+                duration = 10000,
                 slideshow = settings.getValue('slideshow');
 
             function getIndexFromId(id) {

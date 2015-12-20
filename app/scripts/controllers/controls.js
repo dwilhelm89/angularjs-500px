@@ -6,13 +6,9 @@ angular.module('angularjs500pxAutomateApp')
         '$scope',
         'event',
         'viewer',
-        'player',
         'keydown',
         'settings',
-        function($scope, event, viewer, player, keydown, settings) {
-            if (settings.getValue('sound') === true) {
-                player.play();
-            }
+        function($scope, event, viewer, keydown, settings) {
 
             $scope.isActive = function(setting) {
                 return settings.getValue(setting) === true ? 'active' : '';
@@ -27,11 +23,7 @@ angular.module('angularjs500pxAutomateApp')
                 settings.toggleValue('slideshow');
             };
 
-            $scope.toggleSound = function() {
-                settings.toggleValue('sound');
-                player.togglePlay();
-            };
-
+            
             $scope.$watch('pics', function() {
                 // pics has changed: what should we do ?
                 if (typeof $scope.pics !== 'undefined') {

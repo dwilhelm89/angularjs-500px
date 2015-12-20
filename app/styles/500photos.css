@@ -319,19 +319,6 @@ a:hover{
 	width:125px;
 }
 
-/* controls */
-#controls{
-	height:100px;
-	position:absolute;
-	background-color:rgba(0,0,0,.9);
-	z-index:4;
-	bottom:0;
-	left:0;
-	right:0;
-	box-shadow:-2px -2px 8px rgba(0,0,0,1);
-	opacity:.7;
-	text-align:right;
-}
 
 #controls.visible{
 	opacity:1;
